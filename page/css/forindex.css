@@ -1,0 +1,66 @@
+	.table_title{
+		background-color: #0099ff;
+		border:#000000 double;
+		border-style: double;
+		height: 100px;
+		width: 100%;
+	}
+	.table_content{
+		background-color: #0099ff;
+		border:#000000 double;
+		border-style: double;
+		height: 600px;
+		width: 100%;
+		cellspacing=0
+	}
+	.topground{
+		background-image:url(../picture/topground.png);
+		border-style: double;
+		height: 700px;
+	}
+	.toptitle{
+		background-color: #000;
+		color: #fff;
+		font-size: 40px;
+		height: 50px;
+		width: 100%;
+		position: fixed;
+		z-index: 1;
+	}
+	.bottominformatuon{
+		background-color: #000;
+		color: #fff;
+		font-size: 20px;
+		height: 50px;
+		width: 100%;
+		position: absolute;
+		top:1400px;
+	}
+	.main_title{
+		font-size: 6em;
+		font-family: impact;
+		position: relative; 
+		top: 100px; 
+
+	}
+   	.circlePicture{
+     	 	background-image:url(../picture/mug_shot.jpg);
+     		border-style:solid;
+      		border-radius:100%;
+      		height: 5cm;
+      		width: 5cm;
+      		position:relative;
+		top:120px;
+
+   	}
+	.circleground{
+		border-style:solid;
+		background-image: url(../picture/mug_shot.jpg);
+		background-repeat: no-repeat;
+		margin-left: 44%;
+		margin-right: 44%; 
+		border-radius: 100%;
+		height: 200px;
+		position: relative; 
+		top: 120px;
+	}

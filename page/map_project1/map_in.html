@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<title>Map</title>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=ansi"/>
+		<?php 
+			include '../php/mysql_connect_map_in.php';
+			include '../php/new_item_in.php';
+		?>
+
+		<style type="text/css">
+			html,body,#map-canvas { height: 79%; margin: 1%; padding: 0;}
+			#map-canvas{border-style:ridge;}
+			.container{
+				background-color: #0FF;
+				height: 150px;
+				margin: 1%;
+				border-style:ridge;
+
+			}
+			p{
+				font-size:10px;
+				text-decoration:underline;
+			}
+
+		</style>
+		
+		<script type="text/javascript"
+			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8ql0L7r0nPXU_ejI60aWUUGpMUTqqXu0">
+		</script>
+		
+		
+
+		<script type="text/javascript" src="..\php\forapi_in.php"></script>
+	</head>
+
+	<body onload="initialize()">
+
+		<h1><center>動態發布圖</center></h1>
+		<h2>地圖:</h2>
+		<div id="map-canvas" ></div>
+		<h2>發布:</h2>
+		<div><center><textarea rows=6 cols=209 id="TextValue" name="TextValue" ></textarea></center></div>
+		<div><center><button onclick="geoFindMe()">發送</button></center></div><br>
+		<div id="out"></div>
+		<div id="Text"></div>
+		<a href="../index.html"><center>回首頁</center></a>
+
+		
+	</body>
+</html>

@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html>
+<title>虎科地圖</title>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=ansi"/>
+		<?php 
+			include '../php/mysql_connect_map.php';
+		?>
+
+		<style type="text/css">
+			html,body,#map-canvas { height: 90%; margin: 1%; padding: 0;}
+			#map-canvas{border-style:ridge;}
+			.container{
+				background-color: #0FF;
+				height: 150px;
+				margin: 1%;
+				border-style:ridge;
+
+			}
+			p{
+				font-size:10px;
+				text-decoration:underline;
+			}
+
+		</style>
+		
+		<script type="text/javascript"
+			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8ql0L7r0nPXU_ejI60aWUUGpMUTqqXu0">
+		</script>
+		
+
+		<script type="text/javascript" src="..\php\forapi.php"></script>
+	</head>
+
+	<body onload="initialize()">
+
+
+		<h2><center>虎科建設地圖</center></h2>
+		<div id="map-canvas" ></div>
+
+		<br><br><a href="../index.html"><center>回首頁</center></a>
+		
+	</body>
+</html>
